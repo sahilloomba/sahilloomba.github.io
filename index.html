@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sahil Loomba</title>
+  <meta name="description" content="Sahil Loomba — Theory Fellow. Machine learning for dense connectomics and volumetric electron microscopy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <h1>Sahil Loomba</h1>
+      <p class="role">Theory Fellow</p>
+      <nav class="links" aria-label="External links">
+        <a href="mailto:sahilloomba12@gmail.com">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/sahilloomba">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <!-- TODO: replace # with your real URLs, or delete the ones you don't use -->
+        <a href="#">Google&nbsp;Scholar</a>
+        <span aria-hidden="true">·</span>
+        <a href="#">CV</a>
+      </nav>
+    </header>
+
+    <section class="lede">
+      <p>How is the brain of a living organism organized? What organizational
+      principles — assuming these exist — guide the connectivity between neurons?
+      Neurons connect to others in their vicinity, but also across long distances:
+      to the contralateral hemisphere, out to the tip of the fingers, or down to the
+      organs of the body. Volumetric electron microscopy now resolves these networks
+      densely while preserving the ultrastructure of synapses and organelles, and
+      complementary technologies such as expansion-enabled light microscopy add
+      molecular identity to the structural map. Acquiring such data is no longer the
+      limiting step. <em>Reading it is.</em></p>
+    </section>
+
+    <section>
+      <h2>Questions</h2>
+      <p>How do synapses change to enable learning, and what role do mitochondria
+      play in supporting them? How is connectivity remodelled during sleep? Which
+      features of neuronal wiring are conserved across species, and which are
+      contingent on lineage or ecology?</p>
+    </section>
+
+    <section>
+      <h2>Approach</h2>
+      <p>To enable biological insight into these questions:</p>
+      <ul>
+        <li>I develop machine-learning methods for analysing and interpreting dense
+        reconstructions — guided by the biological context of the underlying
+        question — to enable data-driven discovery, building on established
+        segmentation pipelines rather than reinventing them.</li>
+        <li>I apply these methods to existing 3D-EM volumes, so that what can be
+        <em>asked</em> of the data, rather than what can be <em>acquired</em>, sets
+        the limit.</li>
+        <li>I design experiments in a comparative setting — across species,
+        individual animals, development, or perturbed states such as sleep loss and
+        disease models — to map out connectivity motifs that remain conserved
+        against those that are altered.</li>
+      </ul>
+      <p>What survives evolutionary distance, and what breaks under perturbation,
+      together constrain what the underlying organizational principles can be.</p>
+    </section>
+
+    <section>
+      <h2>Beyond the brain</h2>
+      <p>The same logic should apply to circuits that leave it. Autonomic and sensory
+      axons innervate the liver, pancreas and gut, where they terminate on
+      non-neuronal targets rather than on other neurons — and whether that wiring is
+      structured the way cortical wiring is, target-specific and motif-rich, is
+      largely unmeasured. I have begun to extend dense reconstruction and the
+      analysis tools built for cortex to these peripheral tissues. It is also a test
+      of how far models trained on brain tissue transfer to tissue that looks nothing
+      like it.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year">2026</span> Sahil Loomba</p>
+    </footer>
+  </main>
+
+  <script>
+    // Keep the footer year current without a build step.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
